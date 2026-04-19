@@ -1,0 +1,15 @@
+{
+  "name": "trace-it",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "build": "pnpm run -r build",
+    "typecheck": "pnpm run -r typecheck",
+    "dev:api": "pnpm --filter api-server dev",
+    "dev:mobile": "pnpm --filter mobile start"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  }
+}

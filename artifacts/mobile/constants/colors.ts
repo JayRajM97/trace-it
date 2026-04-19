@@ -1,0 +1,17 @@
+export const Colors = {
+  background: "#0f0f0f",
+  surface: "#1a1a1a",
+  surfaceElevated: "#242424",
+  border: "#2a2a2a",
+  primary: "#00E5FF",
+  primaryDim: "#00B8CC",
+  success: "#00E676",
+  warning: "#FFD600",
+  error: "#FF1744",
+  textPrimary: "#FFFFFF",
+  textSecondary: "#888888",
+  textDisabled: "#444444",
+  routeLine: "#00E5FF",
+  walkedLine: "#00E676",
+  waypointDot: "#FFD600",
+} as const;

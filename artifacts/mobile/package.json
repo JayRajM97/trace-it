@@ -1,0 +1,48 @@
+{
+  "name": "mobile",
+  "version": "1.0.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@clerk/clerk-expo": "^2.0.0",
+    "@react-native-async-storage/async-storage": "2.1.0",
+    "@react-native-community/slider": "^4.5.3",
+    "@tanstack/react-query": "catalog:",
+    "@workspace/api-client-react": "workspace:*",
+    "@workspace/api-zod": "workspace:*",
+    "expo": "~53.0.0",
+    "expo-dev-client": "~5.0.0",
+    "expo-file-system": "~18.0.0",
+    "expo-font": "~13.0.0",
+    "expo-haptics": "~14.0.0",
+    "expo-linking": "~7.0.0",
+    "expo-location": "~18.0.0",
+    "expo-router": "~4.0.0",
+    "expo-secure-store": "~14.0.0",
+    "expo-sharing": "~13.0.0",
+    "expo-status-bar": "~2.2.0",
+    "expo-web-browser": "~14.0.0",
+    "react": "catalog:",
+    "react-native": "0.79.0",
+    "react-native-gesture-handler": "~2.22.0",
+    "react-native-maps": "1.18.0",
+    "react-native-reanimated": "~3.17.0",
+    "react-native-safe-area-context": "~5.4.0",
+    "react-native-screens": "~4.10.0",
+    "react-native-svg": "15.12.0",
+    "uuid": "^11.0.0",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/react": "catalog:",
+    "@types/uuid": "^10.0.0",
+    "babel-preset-expo": "~13.0.0",
+    "typescript": "^5.8.0"
+  }
+}

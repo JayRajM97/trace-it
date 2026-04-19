@@ -1,0 +1,22 @@
+{
+  "name": "@workspace/api-client-react",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "catalog:",
+    "@workspace/api-zod": "workspace:*",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/react": "catalog:",
+    "react": "catalog:",
+    "typescript": "^5.8.0"
+  }
+}

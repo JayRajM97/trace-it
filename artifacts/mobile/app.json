@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "TraceIt",
+    "slug": "trace-it",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "traceit",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f0f0f"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.traceit.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "TraceIt needs your location to generate routes and track your walk.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "TraceIt uses background location to track your GPS art walk."
+      }
+    },
+    "android": {
+      "package": "com.traceit.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "TraceIt uses your location to generate and track GPS art routes."
+        }
+      ],
+      [
+        "react-native-maps",
+        {
+          "googleMapsApiKey": "$(GOOGLE_MAPS_API_KEY)"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
