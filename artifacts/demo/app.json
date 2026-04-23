@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "TraceIt Demo",
+    "slug": "traceit-demo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "scheme": "traceit-demo",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "TraceIt needs your location to show shapes on the map."
+      }
+    },
+    "android": {
+      "permissions": ["ACCESS_FINE_LOCATION"]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "TraceIt needs your location to show shapes on the map."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
